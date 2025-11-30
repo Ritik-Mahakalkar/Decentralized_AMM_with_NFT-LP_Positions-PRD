@@ -1,0 +1,207 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* -----------------------------------
+   BASIC GLOBAL STYLES
+------------------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f5f7;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* -----------------------------------
+   GRID LAYOUT
+------------------------------------ */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------------
+   CARDS
+------------------------------------ */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* -----------------------------------
+   FORM ELEMENTS
+------------------------------------ */
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input,
+.form select {
+  width: 80%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+/* -----------------------------------
+   BUTTONS
+------------------------------------ */
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0069d1;
+}
+
+.btn-secondary {
+  background: #e2e2e2;
+}
+
+.btn-secondary:hover {
+  background: #ccc;
+}
+
+.btn-danger {
+  background: #ff4d4d;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #e63b3b;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+/* -----------------------------------
+   SPECIAL BOXES
+------------------------------------ */
+.msg-box {
+  background: #e8f0ff;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.quote-box {
+  background: #eef6ff;
+  border-left: 3px solid #007bff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* -----------------------------------
+   POOL CARD
+------------------------------------ */
+.pool-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.pool-card:hover {
+  background: #f0f0f0;
+}
+
+.pool-card.active {
+  border: 2px solid #007bff;
+}
+
+/* -----------------------------------
+   LP POSITION CARD
+------------------------------------ */
+.position-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
